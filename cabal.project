@@ -1,0 +1,21 @@
+index-state: 2024-04-29T00:00:00Z
+with-compiler: ghc-9.8.2
+
+packages:
+    ./examples
+    ./.
+
+source-repository-package
+    type: git
+    location: https://github.com/sambnt/ghcjs-base.git
+    tag: 930050a115bc2b78394f705df060e1b79004bb71
+    --sha256: 1cwfv9n01q0xf688vqqpadvncbrv8chk5yxvh1w1qxlaiwcj9s2z
+
+source-repository-package
+    type: git
+    location: https://github.com/ghcjs/ghcjs-dom.git
+    tag: 9b4b41a0ce2a6763e48b7603a0264cc9d97d8152
+    --sha256: 0nygx3srmp7dl086cyrss0qd8h4vi051ixg1zfgndxljgkn23bw6
+    subdir:
+      ghcjs-dom
+      ghcjs-dom-javascript
